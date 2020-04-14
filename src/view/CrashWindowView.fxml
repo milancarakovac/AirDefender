@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CrashWindowViewController">
+   <children>
+      <TableView fx:id="crashesTable" layoutX="142.0" layoutY="56.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+        <columns>
+            <TableColumn fx:id="timeColumn" onEditCommit="#timeCommit" prefWidth="150.0" text="Vrijeme">
+                <cellValueFactory>
+                    <PropertyValueFactory property="time" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="locationColumn" onEditCommit="#locationCommit" prefWidth="150.0" text="Lokacija">
+                <cellValueFactory>
+                    <PropertyValueFactory property="location" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="300.0" text="Letjelice">
+               <columns>
+                  <TableColumn fx:id="firstAircraftColumn" onEditCommit="#firstCommit" prefWidth="150.0" text="Prva">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="first" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="secondAircraftColumn" onEditCommit="#secondCommit" prefWidth="150.0" text="Druga">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="second" />
+                      </cellValueFactory>
+                  </TableColumn>
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

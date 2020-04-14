@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <Button layoutX="28.0" layoutY="14.0" mnemonicParsing="false" onAction="#setBan" prefWidth="110.0" text="Zabrani letove" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="2.0" />
+      <Button layoutX="20.0" layoutY="51.0" mnemonicParsing="false" onAction="#removeBan" prefWidth="110.0" text="Dozvoli letove" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="35.0" />
+      <Button layoutX="6.0" layoutY="72.0" mnemonicParsing="false" onAction="#showCrashes" prefWidth="110.0" text="Prikazi sudare" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="70.0" />
+      <Button layoutX="19.0" layoutY="107.0" mnemonicParsing="false" onAction="#showEvents" prefWidth="110.0" text="Prikazi dogadjaje" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="105.0" />
+      <TextArea fx:id="textArea" editable="false" layoutX="117.0" layoutY="5.0" prefHeight="368.0" prefWidth="481.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font size="6.0" />
+         </font></TextArea>
+      <Label fx:id="label" layoutX="119.0" layoutY="378.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="481.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="2.0" />
+      <Button fx:id="legendButton" layoutX="42.0" layoutY="143.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="140.0" />
+   </children>
+</AnchorPane>
